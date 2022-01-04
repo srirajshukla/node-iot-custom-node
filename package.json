@@ -1,0 +1,17 @@
+{
+  "name": "nodered-dev",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node-red -p 3000",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@tensorflow/tfjs-node": "^3.11.0",
+    "gk-nodered-contrib-tfjs-tutorial": "file:gk-nodered-contrib-tfjs-tutorial",
+    "node-red": "^2.1.4"
+  }
+}
