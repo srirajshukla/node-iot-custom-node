@@ -1,7 +1,7 @@
 const tf = require('@tensorflow/tfjs-node');
 const fs = require('fs');
 
-const modelUrl = 'https://tfhub.dev/tensorflow/tfjs-model/ssdlite_mobilenet_v2/1/default/1';
+const modelUrl = 'https://tfhub.dev/google/on_device_vision/classifier/landmarks_classifier_asia_V1/1';
 
 let model;
 

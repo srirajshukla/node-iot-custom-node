@@ -11,7 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "@tensorflow/tfjs-node": "^3.11.0",
-    "gk-nodered-contrib-tfjs-tutorial": "file:gk-nodered-contrib-tfjs-tutorial",
+    "fashion-predictor": "file:fashion-predictor",
     "node-red": "^2.1.4",
     "xor-predictor": "file:xor-predictor"
   }

@@ -4,9 +4,15 @@ const fs = require('fs');
 
 // load COCO-SSD graph model from TensorFlow Hub
 const loadModel = async function (modelUrl, fromTFHub) {
-  console.log(`loading model from ${modelUrl}`);
-
+  // console.log(`loading model from ${modelUrl}`);
+  var handler = tf.io.fileSystem('./model.json')
+  console.log("loading model from", handler.path);
+  // const model = await tf.loadLayersModel("file://D://workspace//nodered//nodered-dev//model.json");
+  // const model = await tf.loadGraphModel("https://tfhub.dev/google/on_device_vision/classifier/landmarks_classifier_asia_V1/1", {fromTFHub: true});
+  // console.log("model = ", model);
+  
   if (fromTFHub) {
+    console.log("loading model from", modelUrl);
     model = await tf.loadGraphModel(modelUrl, {fromTFHub: true});
   } else {
     model = await tf.loadGraphModel(modelUrl);

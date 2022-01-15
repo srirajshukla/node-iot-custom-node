@@ -9,9 +9,9 @@
   "peerDependencies": {
     "@tensorflow/tfjs": "^3.11.0"
   },
-  "node-red":{
-    "nodes":{
-      "tfjs-tutorial-node" : "index.js"
+  "node-red": {
+    "nodes": {
+      "tfjs-tutorial-node": "index.js"
     }
   },
   "author": "",

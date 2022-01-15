@@ -1,0 +1,44 @@
+<script type="text/html" data-template-name="fashion-predictor-node">
+
+  <div class="form-row">
+    <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
+    <input type="text" id="node-input-name" placeholder="Name">
+  </div>
+  
+  <!-- <div class="form-row">
+    <label for="node-input-img"><i class="fa fa-globe"></i> file name: </label>
+    <input type="text" id="node-input-a" placeholder="0">
+  </div>
+  
+  <div class="form-row">
+    <label for="node-input-name"><i class="fa fa-globe"></i> A: </label>
+    <input type="text" id="node-input-b" placeholder="1">
+  </div> -->
+</script>
+
+<script type="text/javascript">
+  RED.nodes.registerType('fashion-predictor-node', {
+    category: 'machine learning2',
+    defaults: {
+      name: {
+        value: 'fashion predictor node'
+      },
+      // a: {value:1},
+      // b: {value:0},
+    },
+    inputs: 1,
+    outputs: 1,
+    paletteLabel: 'fashion predictor node',
+    color: '#ff9200',
+    label: function () {
+      return this.name || 'fashion predictor node';
+    }
+  });
+</script>
+
+<script type="text/html" data-help-name="fashion-predictor-node">
+  <p>A TensorFlow.js node to run prediction using the Coco SSD model for object detection.</p>
+  <p>Provide a <strong>Model URL</strong> and indicate whether the URL points to a TFHub hosted model.</p>
+  <p>The node accepts an image buffer and outputs a JSON prediction object with detected objects and their bounding box
+    and confidence score.</p>
+</script>
